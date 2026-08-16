@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Smartphone,
-  ShieldCheck,
   Zap,
   ArrowRight,
   GitPullRequest,
@@ -142,7 +141,11 @@ export function CryptoNative() {
 
           <div className="flex flex-wrap items-center gap-3 shrink-0">
             <Button asChild className="group">
-              <Link href={siteConfig.appUrl} target="_blank">
+              <Link
+                href={siteConfig.appUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Explore Live Bounties
                 <ArrowRight className="size-4 ml-2 group-hover:translate-x-0.5 transition-transform" />
               </Link>

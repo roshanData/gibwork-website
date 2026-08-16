@@ -218,6 +218,8 @@ export function LookingFor() {
                   key={idx}
                   href={siteConfig.appUrl}
                   target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Explore bounty: ${detail.title}`}
                   className="block"
                 >
                   <Card className="p-4 sm:p-5 flex items-center justify-between gap-4 hover:border-primary/40 hover:bg-muted/30 transition-all">
