@@ -46,7 +46,7 @@ export function StatsStrip() {
             },
           },
         }}
-        className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 bg-card/60 backdrop-blur-md border rounded-2xl p-6 sm:p-8 shadow-sm"
+        className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 bg-card/60 backdrop-blur-md border rounded-2xl p-4 sm:p-6 shadow-sm"
       >
         {stats.map((stat, idx) => {
           const Icon = stat.icon;
@@ -59,7 +59,7 @@ export function StatsStrip() {
               <div className="size-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-3">
                 <Icon className="size-5" />
               </div>
-              <p className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground">
+              <p className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">
                 {stat.value}
               </p>
               <p className="text-sm font-semibold text-foreground mt-1">
